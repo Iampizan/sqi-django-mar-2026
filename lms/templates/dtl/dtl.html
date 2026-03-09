@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTL</title>
+</head>
+<body>
+    <h1> Hello {{ customer }}</h1>
+
+    <h3>Your Cart</h3>
+    <table border="1" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for goods in  cart_items %}
+            <tr>
+                <td>{{ goods.name }}</td>
+                <td>{{ goods.price }}</td>
+                <td>{{ goods.quantity }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    
+        {% if has_discount %}
+            <p>You have a discount available!</p>
+        {% else %}
+            <p>No discounts at this time.</p>
+        {% endif %}
+
+        <p>Shopping at {{ store.name }}, {{ store.city }}.</p>
+
+
+</body>
+</html>

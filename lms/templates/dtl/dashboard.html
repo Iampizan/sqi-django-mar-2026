@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Dashboard</title>
+</head>
+<body>
+    <h1>{{ library_name }}</h1>
+    <p>Librarian: {{ librarian }}</p>
+    <p>Today's Date: {{ current_date }}</p>
+    <h3>{{ featured_message }}</h3>
+
+    {% if is_weekend %}
+    <p>Welcome to a new weekend at the library!</p>
+    {% else %}
+    <p>Welcome to a new weekday at the library!</p>
+    {% endif %}
+
+    <h2>Books Collection</h2>
+    <ul>
+        {% for book in books %}
+        <li> {{ book.title|upper }} by {{ book.author }} ({{book.publication_year}})</li>
+        <li> ISBN: {{ book.isbn}}</li>
+        <li>Category: {{ book.category }}</li>
+        <li>Price: ₦{{ book.price }}</li>
+        {% if book.available_copies > 0 %}
+        <li>Available: ({{ book.available_copies }} copies)</li>
+        {% else %}
+        <li>Available: Out of Stock</li>
+        {% endif %}
+        <br>
+        {% endfor %}
+    </ul>
+
+
+    <h2>Library Statistics</h2>
+    <ul>
+        <li>Total Members: {{ library_stats.total_members }}</li>
+        <li>Books Borrowed Today: {{ library_stats.books_borrowed_today }}</li>
+        <li>Overdue Books: {{ library_stats.overdue_books }}</li>
+        <li>New Arrivals This Month: {{ library_stats.new_arrivals_this_month }}</li>
+    </ul>
+</body>
+</html>
