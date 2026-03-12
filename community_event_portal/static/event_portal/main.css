@@ -1,0 +1,124 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f6f2ef;
+    margin:0;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+}
+
+.logo{
+    font-weight:bold;
+    font-size:20px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#444;
+}
+
+.ticket-btn{
+    background:transparent;
+    border:1px solid #e77b35;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    margin-top:60px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.start-btn{
+    background:#e77b35;
+    border:none;
+    padding:12px 28px;
+    color:white;
+    border-radius:8px;
+    font-size:16px;
+}
+
+
+
+/* EVENT CARDS */
+
+.events{
+    margin-top:60px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap:40px;
+}
+
+.event-card{
+    position:relative;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.event-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+.small{
+    width:220px;
+    height:160px;
+}
+
+.large{
+    width:260px;
+    height:260px;
+}
+
+
+.card-text{
+    position:absolute;
+    bottom:15px;
+    left:15px;
+    color:white;
+    text-shadow:0px 2px 6px rgba(0,0,0,0.5);
+}
+
+
+
+/* EXPERIENCE SECTION */
+
+.experience{
+    text-align:center;
+    margin-top:80px;
+}
+
+.experience h2{
+    font-size:34px;
+}

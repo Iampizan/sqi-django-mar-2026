@@ -1,0 +1,39 @@
+/* Announcement Bar */
+
+#announcement-bar{
+    position: fixed;
+    top: -80px; /* hidden above page */
+    left: 0;
+    width: 100%;
+    background: #ff7a18;
+    color: white;
+    padding: 15px 40px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s ease;
+    z-index: 1;
+}
+
+/* Show animation */
+
+#announcement-bar.show{
+    top: 0;
+}
+
+/* Close button */
+
+#close-announcement{
+    position: absolute;
+    right: 200px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#close-announcement:hover{
+    color: #222;
+}

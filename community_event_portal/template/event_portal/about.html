@@ -1,0 +1,43 @@
+{% extends "partial/base.html" %}
+{% load static %}
+
+{% block title %}
+About - Community Events Portal
+{% endblock title %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'event_portal/about.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<section class="about-container">
+
+    <h1>About Our Community Center</h1>
+
+    <img src="{% static 'images/community.jpg' %}" alt="Community Center">
+
+    <p>
+        Our Community Center is a vibrant hub where people of all ages come together
+        to connect, learn, and participate in exciting local events. The center
+        serves as a welcoming space that encourages collaboration, creativity,
+        and community engagement.
+    </p>
+
+    <p>
+        Throughout the year, the center hosts a wide variety of activities including
+        educational workshops, cultural celebrations, sports events, networking
+        opportunities, and social gatherings. These events are designed to bring
+        residents together and strengthen relationships within the community.
+    </p>
+
+    <p>
+        Our mission is to foster a strong, inclusive, and supportive community by
+        providing opportunities for personal growth, entertainment, and meaningful
+        connections. We believe that when people come together to share ideas,
+        skills, and experiences, the entire community becomes stronger.
+    </p>
+
+</section>
+
+{% endblock content %}

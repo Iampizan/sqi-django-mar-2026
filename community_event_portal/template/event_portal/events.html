@@ -1,0 +1,72 @@
+{% extends "partial/base.html" %}
+{% load static %}
+
+{% block title %}
+Upcoming Events
+{% endblock title %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'event_portal/events.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<section class="events-page">
+
+<h1>Upcoming Community Events</h1>
+
+<div class="events-grid">
+
+    <!-- Event 1 -->
+    <div class="event-card">
+        <img src="{% static 'images/Bashes.jpg' %}" alt="Coding Workshop">
+        <h3>Coding Workshop</h3>
+        <p>Learn the basics of web development and programming.</p>
+        <span class="date">July 10, 2026</span>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="event-card">
+        <img src="{% static 'images/Bashes.jpg' %}" alt="Art Class">
+        <h3>Community Art Class</h3>
+        <p>Explore creativity with guided painting sessions.</p>
+        <span class="date">July 15, 2026</span>
+    </div>
+
+    <!-- Event 3 -->
+    <div class="event-card">
+        <img src="{% static 'images/Bashes.jpg' %}" alt="Fitness Bootcamp">
+        <h3>Fitness Bootcamp</h3>
+        <p>Join our morning fitness session for all levels.</p>
+        <span class="date">July 18, 2026</span>
+    </div>
+
+    <!-- Event 4 -->
+    <div class="event-card">
+        <img src="{% static 'images/Bashes.jpg' %}" alt="Music Festival">
+        <h3>Local Music Festival</h3>
+        <p>Enjoy live performances from talented local artists.</p>
+        <span class="date">July 22, 2026</span>
+    </div>
+
+    <!-- Event 5 -->
+    <div class="event-card">
+        <img src="{% static 'images/Bashes.jpg' %}" alt="Food Fair">
+        <h3>Community Food Fair</h3>
+        <p>Taste delicious meals prepared by local vendors.</p>
+        <span class="date">July 25, 2026</span>
+    </div>
+
+    <!-- Event 6 -->
+    <div class="event-card">
+        <img src="{% static 'images/Bashes.jpg' %}" alt="Tech Meetup">
+        <h3>Tech Meetup</h3>
+        <p>Connect with tech enthusiasts and industry experts.</p>
+        <span class="date">July 30, 2026</span>
+    </div>
+
+</div>
+
+</section>
+
+{% endblock content %}

@@ -1,0 +1,81 @@
+{% extends "partial/base.html" %}
+{% load static %}
+
+{% block title %}
+Event Portal Home-page
+{% endblock title %}
+
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'event_portal/announce.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <h1>Event Management at <br> Your Fingertips</h1>
+
+    <p>
+        Helping you create memorable experiences with ease. <br>
+        Let's turn your vision into reality!
+    </p>
+
+    <button class="start-btn">Get Started →</button>
+
+</section>
+
+
+
+<!-- EVENT CARDS -->
+
+<section class="events">
+
+    <div class="event-card small">
+        <img src="{% static 'images/Bashes.jpg' %}">
+        <div class="card-text">
+            <p>Bar crawl</p>
+            <h3>Bashes</h3>
+        </div>
+    </div>
+
+
+    <div class="event-card large">
+        <img src="{% static 'images/career.jpg' %}">
+        <div class="card-text">
+            <h3>Stride for Success</h3>
+        </div>
+    </div>
+
+
+    <div class="event-card small">
+        <img src="{% static 'images/success.jpg' %}">
+        <div class="card-text">
+            <p>Run club</p>
+            <h3>Resolutions</h3>
+        </div>
+    </div>
+
+</section>
+
+    <div id="announcement-bar">
+        <span>New workshops available this month!</span>
+        <button id="close-announcement">x </button>
+    </div>
+<
+<!-- SECOND SECTION -->
+
+<section class="experience">
+
+
+<h2>Create Unforgettable <br> Event Experiences</h2>
+
+</section>
+
+<script src="{% static 'event_portal/js/announce.js' %}"></script>
+
+{% endblock content %}
+
